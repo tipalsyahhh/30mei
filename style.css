@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
 }
@@ -14,6 +15,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .gif {
@@ -40,9 +42,10 @@ body, html {
 
 .nama-container h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Forever Brush Script', cursive;
     font-style: italic;
+    color: #000;
 }
 
 .batang {
@@ -56,6 +59,7 @@ body, html {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -63,6 +67,7 @@ body, html {
 
 .img-batang {
     height: calc(100vh * 0.25);
+    margin-bottom: -4px;
 }
 
 .batang-2 {
@@ -70,4 +75,26 @@ body, html {
     top: 0;
     left: 0;
     animation: fadeIn 4s ease-in-out;
+}
+
+.button-next {
+    width: 120px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.1);
+    backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.button-next button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
 }
