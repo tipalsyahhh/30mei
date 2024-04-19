@@ -7,4 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
         home.style.display = 'none';
         content1.style.display = 'block';
     });
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    function playBackgroundMusic() {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play();
+        }
+    }
+    backgroundMusic.addEventListener('ended', function() {
+        playBackgroundMusic();
+    });
+    const lanjutButton = document.getElementById('lanjutButton');
+    lanjutButton.addEventListener('click', function() {
+        playBackgroundMusic();
+    });
 });

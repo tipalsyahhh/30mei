@@ -148,6 +148,7 @@ html {
     font-size: 30px;
     font-weight: bold;
     color: #000;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .isi-conten-1 h5 {
@@ -156,6 +157,32 @@ html {
     color: #1d1d1d;
     font-style: italic;
     margin-top: -10px;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.ucapan {
+    display: flex;
+    align-items: center;
+    width: calc(100vw * 0.50);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-ucapan {
+    height: calc(100vh * 0.30);
+    margin-left: 20px;
+    animation: fadeIn 6s ease-in-out;
+}
+
+.ucapan h5 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #1d1d1d;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    animation: fadeIn 7s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -171,11 +198,31 @@ html {
         height: calc(100vh * 0.20);
     }
 
+    .isi-conten-1 {
+        top: 20%;
+    }
+
     .isi-conten-1 h3 {
         font-size: 25px;
     }
     
     .isi-conten-1 h5 {
-        font-size: 15px;
+        font-size: 18px;
     }
+
+    .ucapan {
+        display: grid;
+        place-items: center;
+        width: calc(100vw * 0.90);
+    }
+
+    .img-ucapan {
+        height: calc(100vh * 0.30);
+        margin: 0;
+    }
+
+    .ucapan h5 {
+        font-size: 11px;
+    }
+    
 }
