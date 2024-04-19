@@ -98,3 +98,84 @@ html {
     cursor: pointer;
     margin-right: 5px;
 }
+
+.lampu {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.img-lampu {
+    height: calc(100vh * 0.15);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gambar-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.img-1 {
+    height: calc(100vh * 0.25);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.kipas {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.img-kipas {
+    height: calc(100vh * 0.25);
+}
+
+.isi-conten-1 {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.isi-conten-1 h3 {
+    font-family: acme, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.isi-conten-1 h5 {
+    font-family: serif;
+    font-size: 20px;
+    color: #1d1d1d;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    .img-1 {
+        height: calc(100vh * 0.15);
+    }
+
+    .img-lampu {
+        height: calc(100vh * 0.10);
+    }
+
+    .img-kipas {
+        height: calc(100vh * 0.20);
+    }
+
+    .isi-conten-1 h3 {
+        font-size: 25px;
+    }
+    
+    .isi-conten-1 h5 {
+        font-size: 15px;
+    }
+}
