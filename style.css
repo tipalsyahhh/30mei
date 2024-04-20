@@ -212,6 +212,12 @@ html {
     cursor: pointer;
 }
 
+.conten-2 {
+    height: 100vh;
+    background-image: url('img/daun.gif');
+    background-position: center;
+}
+
 .container-galery {
     position: fixed;
     top: 50%;
@@ -221,6 +227,8 @@ html {
     padding: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(51, 51, 51, 0.363);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6.8px);
 }
 
 .container-galery h3 {
@@ -305,7 +313,7 @@ html {
     }
 
     .img-galery {
-        height: calc(100vh * 0.15);
+        height: calc(100vh * 0.16);
     }
 
     .img-pot {
