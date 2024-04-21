@@ -51,7 +51,6 @@ html {
     position: fixed;
     bottom: 0;
     right: 0;
-    animation: fadeIn 4s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -73,7 +72,6 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    animation: fadeIn 4s ease-in-out;
 }
 
 .button-next {
@@ -88,7 +86,6 @@ html {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    animation: fadeIn 4s ease-in-out;
 }
 
 .button-next button {
@@ -205,7 +202,7 @@ html {
     margin-left: 10px;
 }
 
-.button-1 i {
+.button-1 button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -280,13 +277,54 @@ html {
     cursor: pointer;
 }
 
-.button-2 i {
+.button-2 button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
+.container-conten-3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.1);
+    height: calc(100vh * 0.50);
+    width: 70%;
+}
+
+.bunga-atas {
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    z-index: 1;
+}
+
+.bunga-bawah {
+    position: absolute;
+    bottom: -25%;
+    left: -2%;
+    z-index: 1;
+}
+
+.img-bunga-atas,
+.img-bunga-bawah {
+    height: calc(100vh * 0.40);
+}
+
 @media (max-width: 768px) {
+    .img-batang {
+        height: calc(100vh * 0.20);
+    }
+
     .img-1 {
         height: calc(100vh * 0.15);
     }
@@ -342,6 +380,23 @@ html {
     .img-pot {
         height: calc(100vh * 0.20);
         margin-left: 5px;
+    }
+
+    .container-conten-3 {
+        width: calc(100vw* 0.90);
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .bunga-atas {
+        left: -10%;
+    }
+
+    .bunga-bawah {
+        bottom: -16%;
+        left: -8%;
     }
 
 }
