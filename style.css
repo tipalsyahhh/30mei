@@ -254,9 +254,10 @@ html {
     margin-left: 15px;
 }
 
-.img-kucing {
-    height: calc(100vh * 0.10);
+.img-cat {
+    height: calc(100vh * 0.12);
     margin-bottom: -11px;
+    margin-left: -5px;
 }
 
 @media (max-width: 768px) {
