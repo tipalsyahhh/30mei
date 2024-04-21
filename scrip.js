@@ -47,3 +47,32 @@ document.addEventListener('DOMContentLoaded', function() {
         playBackgroundMusic();
     });
 });
+function animateTypingText() {
+    const animatedTextElement = document.getElementById('animated-text');
+    const textToType = animatedTextElement.innerText.trim();
+    let currentText = '';
+    let textIndex = 0;
+
+    const typingInterval = setInterval(() => {
+        const char = textToType[textIndex];
+        currentText += char;
+        animatedTextElement.textContent = currentText;
+        textIndex++;
+        if (textIndex >= textToType.length) {
+            clearInterval(typingInterval);
+        }
+    }, 60);
+}
+function watchConten3Visibility() {
+    const conten3Element = document.querySelector('.conten-3');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateTypingText();
+                observer.disconnect();
+            }
+        });
+    });
+    observer.observe(conten3Element);
+}
+watchConten3Visibility();

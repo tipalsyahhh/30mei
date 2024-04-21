@@ -72,6 +72,7 @@ html {
 .img-batang {
     height: calc(100vh * 0.25);
     margin-bottom: -4px;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .batang-2 {
