@@ -296,7 +296,7 @@ html {
     position: relative;
     z-index: 2;
     background-color: #fff;
-    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 4px 20px rgb(21 21 21 / 17%);
     height: calc(100vh * 0.50);
     width: 70%;
 }
@@ -308,6 +308,13 @@ html {
     z-index: 1;
 }
 
+.bunga-atas-kanan {
+    position: absolute;
+    top: -25%;
+    right: 0;
+    z-index: 1;
+}
+
 .bunga-bawah {
     position: absolute;
     bottom: -25%;
@@ -315,9 +322,22 @@ html {
     z-index: 1;
 }
 
+.bunga-bawah-kanan {
+    position: absolute;
+    bottom: -25%;
+    right: -10%;
+    z-index: 1;
+}
+
 .img-bunga-atas,
-.img-bunga-bawah {
+.img-bunga-bawah,
+.img-bunga-atas-kanan,
+.img-bunga-bawah-kanan {
     height: calc(100vh * 0.40);
+}
+
+.img-bunga-bawah-kanan {
+    height: calc(100vh * 0.50);
 }
 
 @media (max-width: 768px) {
@@ -397,6 +417,25 @@ html {
     .bunga-bawah {
         bottom: -16%;
         left: -8%;
+    }
+
+    .bunga-atas-kanan {
+        top: -20%;
+        right: -12%;
+    }
+
+    .bunga-bawah-kanan {
+        bottom: -18%;
+        right: -30%;
+    }
+
+    .img-bunga-atas-kanan,
+    .img-bunga-bawah {
+        height: calc(100vh * 0.30);
+    }
+
+    .img-bunga-bawah-kanan {
+        height: calc(100vh * 0.45);
     }
 
 }
