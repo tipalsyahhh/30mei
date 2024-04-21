@@ -10,6 +10,12 @@ html {
 
 .home {}
 
+.conten-1,
+.conten-2,
+.conten-3 {
+    display: none;
+}
+
 .nama-container {
     position: fixed;
     top: 50%;
@@ -299,6 +305,7 @@ html {
     box-shadow: 0 4px 20px rgb(21 21 21 / 17%);
     height: calc(100vh * 0.50);
     width: 70%;
+    padding: 10px;
 }
 
 .bunga-atas {
@@ -338,6 +345,14 @@ html {
 
 .img-bunga-bawah-kanan {
     height: calc(100vh * 0.50);
+}
+
+.card h3 {
+    font-family: acme, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    animation: fadeIn 4s ease-in-out;
 }
 
 @media (max-width: 768px) {
