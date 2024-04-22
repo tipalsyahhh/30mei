@@ -418,7 +418,7 @@ html {
     }
 
     .img-pot {
-        height: calc(100vh * 0.20);
+        height: calc(100vh * 0.18);
         margin-left: 5px;
     }
 
@@ -460,6 +460,8 @@ html {
 
     .card p {
         font-size: 13px;
+        margin-top: -4px;
+        margin-bottom: 5px;
     }
 
 }
