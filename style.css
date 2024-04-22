@@ -356,6 +356,10 @@ html {
     animation: fadeIn 4s ease-in-out;
 }
 
+.card p {
+    font-size: 20px;
+}
+
 @media (max-width: 768px) {
     .img-batang {
         height: calc(100vh * 0.20);
@@ -452,6 +456,10 @@ html {
 
     .img-bunga-bawah-kanan {
         height: calc(100vh * 0.45);
+    }
+
+    .card p {
+        font-size: 13px;
     }
 
 }
